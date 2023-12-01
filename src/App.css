@@ -1,340 +1,341 @@
 #root {
-  text-align: center;
-  overflow-x: hidden;
-}
-
-.application{
-  width: 100%;
-  height: 100%;
-  padding: 48px 24px  0px 24px;
-}
-
-#header{
-  display: flex;
-  align-items: top;
-  justify-content: space-between;
-}
-
-#head{
-  width: 109px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #FFF;
-  letter-spacing: 20px;
-}
-
-#dayNightImg{
-  width: 20px;
-  height: 20px;
-}
-
-.applicationLight{
-  background-image: url("./images/bg-mobile-light.jpg");
-  background-size: 375px 200px;
-  background-repeat: no-repeat;
-  background-position: center top;
-
-}
-
-.applicationDark{
-  background-image: url("./images/bg-mobile-dark.jpg");
-  background-size: 375px 200px;
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
-.input{
-  height: 48px;
-  width: 100%;
-  padding: 14px 20px 14px 20px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  margin-top:40px ;
-}
-
-.light{
-  background-color: #FFF;
-  box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
-  color: #494C6B;
-
-}
-
-.dark{
-  background-color: #25273D;
-  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
-  color: #C8CBE7;
-}
-
-.checkbox{
-  appearance: none;
-  border-radius: 50%;
+    text-align: center;
+    overflow-x: hidden;
+  }
   
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-}
-
-.checkboxLight{
-  border: 1px solid #E3E4F1;
-
-}
-
-.checkboxDark{
-  border: 1px solid #393A4B;
-}
-
-.checkbox:checked{
-  /* background: linear-gradient(135deg, #5DF 0%, #C058F3 100%);
-  background-image:url("./images/icon-check.svg");
-  background-size: 5px 5px;
-  background-position: center center;
-  background-repeat: no-repeat; */
-  background-image:url("./images/Group 4.jpg");
-  background-position: center center;
-  background-repeat: no-repeat; 
-  background-size: 100%;
-  border: none;
-  /* transition-duration:2000ms; */
-}
-
-.checkbox:hover{
-  border: 1px solid linear-gradient(135deg, #5DF 0%, #C058F3 100%) ;
-}
-
-.text{
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.167px;
-  margin-left: 12px;
-}
-
-.textInput{
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  
-}
-
-.textInput:focus{
-  outline: none;
-}
-
-.lightTextInput{
-  color: #393A4B;
-}
-
-.lightTextInput::placeholder{
-  color: #9495A5;
-}
-
-.darkTextInput{
-  color: #C8CBE7;
-}
-
-.darkTextInput::placeholder{
-  color: #767992;
-}
-
-.list{
-  margin-top: 16px;
-  /* overflow: hidden; */
-  height: 364px;
-  width: 327px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-}
-
-.dolist{
-  border-radius: 5px 5px 0px 0px ;
-  overflow-y: scroll;
-}
-
-.toDo{
-  height: 52px;
-  width: 100%;
-  padding: 16px 20px 16px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#textcheckbox{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.firstTodo{
-  border-radius: 5px 5px 0px 0px;
-}
-
-.bottomLineligth{
-  border-bottom: 1px solid #E3E4F1;
-}
-
-.bottomLinedark{
-  border-bottom: 1px solid #393A4B;
-}
-
-.textLinedlight{
-  text-decoration-line: line-through;
-  color: #D1D2DA;
-}
-
-.textLinedDark{
-  text-decoration-line: line-through;
-  color: #4D5067;
-}
-
-.onlymanipulationBox{
-  display: flex;
-  justify-content: space-between;
-  border-radius:5px ;
-}
-
-.manipulationBox{
-  display: flex;
-  justify-content: space-between;
-  border-radius:0px 0px 5px 5px ;
-}
-
-.cleartext{
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.167px;
-}
-
-.clearlight{
-  color: #9495A5;
-}
-
-.clearDark{
-  color: #5B5E7E;
-}
-
-.filter{
-  position:absolute;
-  bottom: 60px;
-  left: 24px;
-  width: 327px;
-  /* background-color:#FFF ; */
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 80px 19px 81px;
-  border-radius: 5px;
-}
-
-.filterButton{
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.194px;
-}
-
-.filterButtonActivated{
-  color:#3A7CFD ;
-}
-
-.filterButtonNotActivatedlight{
-  color:#9495A5 ;
-}
-
-.filterButtonNotActivatedDark{
-  color: #5B5E7E;
-}
-
-.ending{
-  margin-top: 104px;
-  margin-bottom: 72px;
-}
-
-@media (min-width:1000px) {
-
   .application{
-    padding: 70px 450px  0px 450px;
+    width: 100%;
+    height: 100%;
+    padding: 48px 24px  0px 24px;
   }
-
-  .applicationLight{
-    background-image: url("./images/bg-desktop-light.jpg");
-    background-size: 100% 300px;
+  
+  #header{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
   }
-
-  .applicationDark{
-    background-image: url("./images/bg-desktop-dark.jpg");
-    background-size: 100% 300px;
-  }
-
+  
   #head{
-    width: 167px;
-    font-size: 40px;
+    width: 109px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+    letter-spacing: 20px;
+  }
+  
+  #dayNightImg{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .applicationLight{
+    background-image: url("/public/images/bg-mobile-light.jpg");
+    background-size: 375px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+  
+  }
+  
+  .applicationDark{
+    background-image: url("/public/images/bg-mobile-dark.jpg");
+    background-size: 375px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  .input{
+    height: 48px;
+    width: 100%;
+    padding: 14px 20px 14px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top:40px ;
+  }
+  
+  .light{
+    background-color: #FFF;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+    color: #494C6B;
+  
+  }
+  
+  .dark{
+    background-color: #25273D;
+    box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.50);
+    color: #C8CBE7;
+  }
+  
+  .checkbox{
+    appearance: none;
+    border-radius: 50%;
+    
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+  }
+  
+  .checkboxLight{
+    border: 1px solid #E3E4F1;
+  
+  }
+  
+  .checkboxDark{
+    border: 1px solid #393A4B;
+  }
+  
+  .checkbox:checked{
+    /* background: linear-gradient(135deg, #5DF 0%, #C058F3 100%);
+    background-image:url("/public/images/icon-check.svg");
+    background-size: 5px 5px;
+    background-position: center center;
+    background-repeat: no-repeat; */
+    background-image:url("/public/images/done-image.svg");
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    border: none;
+    /* transition-duration:2000ms; */
+  }
+  
+  .checkbox:hover{
+    border: 1px solid linear-gradient(135deg, #5DF 0%, #C058F3 100%) ;
+  }
+  
+  .text{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.167px;
+    margin-left: 12px;
+  }
+  
+  .textInput{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    
+  }
+  
+  .textInput:focus{
+    outline: none;
+  }
+  
+  .lightTextInput{
+    color: #393A4B;
+  }
+  
+  .lightTextInput::placeholder{
+    color: #9495A5;
+  }
+  
+  .darkTextInput{
+    color: #C8CBE7;
+  }
+  
+  .darkTextInput::placeholder{
+    color: #767992;
+  }
+  
+  .list{
+    margin-top: 16px;
+    /* overflow: hidden; */
+    height: 364px;
+    width: 327px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dolist{
+    border-radius: 5px 5px 0px 0px ;
+    overflow-y: scroll;
+  }
+  
+  .toDo{
+    height: 52px;
+    width: 100%;
+    padding: 16px 20px 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #textcheckbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .firstTodo{
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .bottomLineligth{
+    border-bottom: 1px solid #E3E4F1;
+  }
+  
+  .bottomLinedark{
+    border-bottom: 1px solid #393A4B;
+  }
+  
+  .textLinedlight{
+    text-decoration-line: line-through;
+    color: #D1D2DA;
+  }
+  
+  .textLinedDark{
+    text-decoration-line: line-through;
+    color: #4D5067;
+  }
+  
+  .onlymanipulationBox{
+    display: flex;
+    justify-content: space-between;
+    border-radius:5px ;
+  }
+  
+  .manipulationBox{
+    display: flex;
+    justify-content: space-between;
+    border-radius:0px 0px 5px 5px ;
+  }
+  
+  .cleartext{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.167px;
+  }
+  
+  .clearlight{
+    color: #9495A5;
+  }
+  
+  .clearDark{
+    color: #5B5E7E;
+  }
+  
+  .filter{
+    position:absolute;
+    bottom: 60px;
+    left: 24px;
+    width: 327px;
+    /* background-color:#FFF ; */
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px 19px 81px;
+    border-radius: 5px;
+  }
+  
+  .filterButton{
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 15px;
-  }
-
-  #dayNightImg{
-    width: 26px;
-    height: 26px;
-  }
-
-  .input{
-    height: 64px;
-    padding: 20px 24px 20px 24px;
-    margin-top:48px ;
-  }
-
-  .textInput{
-    width: 100%;
-  }
-
-  .checkbox{
-    width: 24px;
-    height: 24px;
-  }
-
-  .text{
-    font-size: 18px;
-    letter-spacing: -0.25px;
-  }
-
-  .list{
-    margin-top: 24px;
-    height: 389px;
-    width: 100%;
-  }
-
-  .toDo{
-    height: 64px;
-    width: 100%;
-    padding: 20px 24px 20px 24px;
-    /* justify-content: space-between; */
-  }
-
-  .cleartext{
-    font-size: 14px;
     letter-spacing: -0.194px;
   }
-
-  .filter{
-    position:static;
-    width: 166px;
-    display: flex;
-    align-items: center;
-    gap: 19px;
-    padding: 0;
-    margin-left: 96px;
-    margin-right: 56px;
+  
+  .filterButtonActivated{
+    color:#3A7CFD ;
   }
-
-}
+  
+  .filterButtonNotActivatedlight{
+    color:#9495A5 ;
+  }
+  
+  .filterButtonNotActivatedDark{
+    color: #5B5E7E;
+  }
+  
+  .ending{
+    margin-top: 104px;
+    margin-bottom: 72px;
+  }
+  
+  @media (min-width:1000px) {
+  
+    .application{
+      padding: 70px 450px  0px 450px;
+    }
+  
+    .applicationLight{
+      background-image: url("/public/images/bg-desktop-light.jpg");
+      background-size: 100% 300px;
+    }
+  
+    .applicationDark{
+      background-image: url("/public/images/bg-desktop-dark.jpg");
+      background-size: 100% 300px;
+    }
+  
+    #head{
+      width: 167px;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 15px;
+    }
+  
+    #dayNightImg{
+      width: 26px;
+      height: 26px;
+    }
+  
+    .input{
+      height: 64px;
+      padding: 20px 24px 20px 24px;
+      margin-top:48px ;
+    }
+  
+    .textInput{
+      width: 100%;
+    }
+  
+    .checkbox{
+      width: 24px;
+      height: 24px;
+    }
+  
+    .text{
+      font-size: 18px;
+      letter-spacing: -0.25px;
+    }
+  
+    .list{
+      margin-top: 24px;
+      height: 389px;
+      width: 100%;
+    }
+  
+    .toDo{
+      height: 64px;
+      width: 100%;
+      padding: 20px 24px 20px 24px;
+      /* justify-content: space-between; */
+    }
+  
+    .cleartext{
+      font-size: 14px;
+      letter-spacing: -0.194px;
+    }
+  
+    .filter{
+      position:static;
+      width: 166px;
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      padding: 0;
+      margin-left: 96px;
+      margin-right: 56px;
+    }
+  
+  }
+  
