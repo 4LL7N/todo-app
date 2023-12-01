@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
+*{
+  font-family: "Josefin Sans";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  /* width: 100%; */
+  min-height: 100vh;
+}
+
